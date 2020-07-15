@@ -1,0 +1,5 @@
+---
+splunk::type: 'search'
+
+splunk::cluster_mode: 'searchhead'
+splunk::shcluster_mode: 'none'

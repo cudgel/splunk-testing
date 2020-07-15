@@ -1,0 +1,12 @@
+---
+splunk::type: 'search'
+splunk::cluster_mode: 'searchhead'
+splunk::repl_port: 8192
+splunk::shcluster_mode: 'peer'
+splunk::shcluster_label: 'default'
+splunk::clusters:
+  - label: 'default'
+    multisite: false`
+    sites:
+      - default
+    uri: 'splunkixm:8089'

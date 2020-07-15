@@ -1,0 +1,2 @@
+---
+splunk::shcluster_mode: "deployer"

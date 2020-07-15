@@ -1,0 +1,21 @@
+---
+classes:
+  - splunk
+
+message: "This node is using common data"
+
+splunk::create_user: true
+splunk::admin_pass: 'changedme'
+splunk::symmkey: 'changedme'
+splunk::search_deploy: "splunkds:8089"
+splunk::version: "8.0.4.1"
+splunk::release: "ab7a85abaa98"
+splunk::geo_source: '/tmp/'
+splunk::geo_hash: 'c669f86e6bd1dc4fe14af21b9e79aebfb05c89d29a9ed0e26e648b6b0c94c2a6'
+splunk::tcpout:
+  group: 'default'
+  cname: 'splunkix'
+  servers:
+    - 'splunkix1:9998'
+    - 'splunkix2:9998'
+    - 'splunkix3:9998'

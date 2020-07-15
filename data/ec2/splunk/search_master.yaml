@@ -1,0 +1,8 @@
+---
+role: 'splunk_searchhead'
+splunk::is_captain: true
+splunk::preferred_captain: true
+splunk::shcluster_members:
+  - https://splunksh1:8089
+  - https://splunksh2:8089
+  - https://splunksh3:8089

@@ -1,0 +1,14 @@
+---
+splunk::type: 'indexer'
+splunk::inputs:
+  'splunktcp-ssl':
+    inputtype: 'splunktcp-ssl'
+    target: '9998'
+splunk::server_site: 'default'
+splunk::clusters:
+  - label: 'default'
+    sites:
+      - default
+    uri: 'splunkixm:8089'
+splunk::cluster_mode: 'slave'
+splunk::repl_port: 8193

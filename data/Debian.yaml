@@ -1,0 +1,19 @@
+---
+splunk::inputs:
+  'messages':
+    target: '/var/log/syslog'
+    index: 'main'
+    sourcetype: 'linux_messages_syslog'
+  'secure':
+    target: '/var/log/authlog'
+    index: 'main'
+    sourcetype: 'linux_secure'
+  'maillog':
+    target: '/var/log/mail.log'
+    index: 'main'
+    sourcetype: 'syslog'
+  'cron':
+    target: '/var/log/cron'
+    index: 'main'
+    sourcetype: 'syslog'
+splunk::type: 'forwarder'

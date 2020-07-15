@@ -1,0 +1,30 @@
+---
+splunk::acls:
+  'auditd':
+    target: '/var/log/audit'
+    type: 'directory'
+splunk::inputs:
+  'messages':
+    target: '/var/log/messages'
+    index: 'main'
+    sourcetype: 'syslog'
+  'secure':
+    target: '/var/log/secure'
+    index: 'main'
+    sourcetype: 'linux_secure'
+  'maillog':
+    target: '/var/log/maillog'
+    index: 'main'
+    sourcetype: 'syslog'
+  'spooler':
+    target: '/var/log/spooler'
+    index: 'main'
+    sourcetype: 'syslog'
+  'cron':
+    target: '/var/log/cron'
+    index: 'main'
+    sourcetype: 'syslog'
+  'yum':
+    target: '/var/log/yum.log'
+    index: 'os'
+    sourcetype: 'yumlog'

@@ -1,0 +1,12 @@
+---
+splunk::type: 'index_master'
+splunk::cluster_mode: 'master'
+splunk::server_site: 'default'
+splunk::clusters: 
+  - label: 'default'
+    access_logging: 1
+    build_load: 5
+    sites:
+      - default
+    repl_factor: 2
+    search_factor: 1
