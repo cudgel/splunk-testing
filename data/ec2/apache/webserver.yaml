@@ -1,9 +1,0 @@
----
-splunk::type: 'forwarder'
-splunk::source: 'splunk'
-splunk::create_user: true
-splunk::tcpout:
-  group: 'splunkaws'
-  cname: 'test-secops-indexer.us-east-1.amazonaws.com'
-  servers: 
-    - 'test-secops-indexer.us-east-1.amazonaws.com:9998'

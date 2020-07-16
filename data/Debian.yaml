@@ -16,4 +16,3 @@ splunk::inputs:
     target: '/var/log/cron'
     index: 'main'
     sourcetype: 'syslog'
-splunk::type: 'forwarder'
