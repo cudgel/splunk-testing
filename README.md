@@ -91,9 +91,8 @@ cachedir: '/var/cache/r10k'
 sources:
   # This will clone the git repository and instantiate an environment per
   # branch in /etc/puppet/environments
-  # here I am using a local bitbucket replica running in Docker
   auto-puppet:
-    remote: 'http://10.0.1.90:7990/scm/~admin/puppet.git'
+    remote: 'https://github.com/cudgel/splunk-testing.git'
     basedir: /etc/puppetlabs/code/environments
 ```
 
